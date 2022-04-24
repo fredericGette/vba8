@@ -89,9 +89,9 @@ public:
 
 	void StopConnectLoop(void);
 
-	static Moga::Windows::Phone::ControllerManager^ getController() {
-		return mogacontroller;
-	};
+	//FG static Moga::Windows::Phone::ControllerManager^ getController() {
+	//	return mogacontroller;
+	//};
 
 	static Windows::Devices::Sensors::Accelerometer^ getAccelormeter()
 	{
@@ -123,7 +123,7 @@ private:
 	BasicTimer^ m_timer;
 	EmulatorGame *emulator;
 	VirtualController *vController;
-	static Moga::Windows::Phone::ControllerManager^ mogacontroller;
+	// FG static Moga::Windows::Phone::ControllerManager^ mogacontroller;
 	int orientation;
 	HANDLE waitEvent;
 	HANDLE linkEndEvent;

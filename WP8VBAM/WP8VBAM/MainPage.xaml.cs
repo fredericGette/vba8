@@ -245,7 +245,6 @@ namespace PhoneDirect3DXamlAppInterop
                             await this.StartROM(entry);
 
                     }
-
                 }
 
             }

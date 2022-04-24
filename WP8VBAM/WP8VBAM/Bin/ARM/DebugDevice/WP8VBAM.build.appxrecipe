@@ -1,0 +1,872 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ORDI-FRED</Machine>
+    <WindowsUser>frede</WindowsUser>
+    <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
+    <SolutionConfiguration>DebugDevice|ARM</SolutionConfiguration>
+    <PackageArchitecture>arm</PackageArchitecture>
+    <PackageIdentityName>0a409e81-ab14-47f3-bd4e-2f57bb5bae9a</PackageIdentityName>
+    <PackageIdentityPublisher>CN=App_info</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\obj\ARM\DebugDevice\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\bin\ARM\DebugDevice\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\bin\ARM\DebugDevice\VBA8.dll">
+      <PackagePath>VBA8.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\WP8VBAMComponent.dll">
+      <PackagePath>WP8VBAMComponent.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\AdDuplexWP7.2.7.0.2\lib\sl4-windowsphone71\AdDuplex.WindowsPhone.dll">
+      <PackagePath>AdDuplex.WindowsPhone.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\CloudSixConnector.1.0.3\lib\wp8\CloudSixConnector.dll">
+      <PackagePath>CloudSixConnector.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\Coding4Fun.Toolkit.Controls.2.0.7\lib\windowsphone8\Coding4Fun.Toolkit.Controls.dll">
+      <PackagePath>Coding4Fun.Toolkit.Controls.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\AdMob WP8\windowsphone8\GoogleAds.dll">
+      <PackagePath>GoogleAds.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\Ionic.Zip.dll">
+      <PackagePath>Ionic.Zip.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.dll">
+      <PackagePath>Microsoft.Advertising.Mobile.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI.dll">
+      <PackagePath>Microsoft.Advertising.Mobile.UI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\Microsoft.Live.Controls.dll">
+      <PackagePath>Microsoft.Live.Controls.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\Microsoft.Live.dll">
+      <PackagePath>Microsoft.Live.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll">
+      <PackagePath>Microsoft.Phone.Controls.Toolkit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\MobFox.Ads.dll">
+      <PackagePath>MobFox.Ads.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\sharpcompress.0.10.3\lib\portable-net4+sl5+wp8+win8\SharpCompress.dll">
+      <PackagePath>SharpCompress.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\SharpGIS.GZipWebClient.1.4.0.0\lib\wp71\SharpGIS.GZipWebClient.dll">
+      <PackagePath>SharpGIS.GZipWebClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Controls.Data.dll">
+      <PackagePath>Telerik.Windows.Controls.Data.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Controls.DataVisualization.dll">
+      <PackagePath>Telerik.Windows.Controls.DataVisualization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Controls.ImageEditor.dll">
+      <PackagePath>Telerik.Windows.Controls.ImageEditor.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Controls.Input.dll">
+      <PackagePath>Telerik.Windows.Controls.Input.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Controls.Primitives.dll">
+      <PackagePath>Telerik.Windows.Controls.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Core.dll">
+      <PackagePath>Telerik.Windows.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Data.dll">
+      <PackagePath>Telerik.Windows.Data.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WriteableBitmapEx.1.0.9.0\lib\WindowsPhone8\WriteableBitmapExWinPhone.dll">
+      <PackagePath>WriteableBitmapExWinPhone.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WriteableBitmapEx.1.0.9.0\lib\WindowsPhone8\WriteableBitmapExWinPhoneXnaDependant.dll">
+      <PackagePath>WriteableBitmapExWinPhoneXnaDependant.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.1\Libraries\Microsoft.Phone.Controls.Maps.dll">
+      <PackagePath>Microsoft.Phone.Controls.Maps.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\Moga.Windows.Phone.dll">
+      <PackagePath>Moga.Windows.Phone.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\cs-CZ\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>cs-CZ\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\da-DK\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>da-DK\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\de-DE\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>de-DE\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\el-GR\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>el-GR\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\en-GB\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>en-GB\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\es-ES\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>es-ES\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\fi-FI\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>fi-FI\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\fr-FR\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>fr-FR\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\hu-HU\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>hu-HU\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\it-IT\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>it-IT\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\ja-JP\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>ja-JP\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\ko-KR\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>ko-KR\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\nb-NO\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>nb-NO\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\nl-NL\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>nl-NL\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\pl-PL\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>pl-PL\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\pt-BR\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>pt-BR\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\pt-PT\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>pt-PT\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\ru-RU\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>ru-RU\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\sv-SE\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>sv-SE\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\zh-CN\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>zh-CN\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\zh-TW\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>zh-TW\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\cs\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>cs\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\da\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>da\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\de\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>de\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\el\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>el\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\en\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>en\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\en-gb\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>en-gb\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\es\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>es\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\fi\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>fi\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\fr\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>fr\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\hu\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>hu\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\id\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>id\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\it\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>it\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\ja\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>ja\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\ko\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>ko\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\ms\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>ms\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\nb-no\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>nb-no\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\nl\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>nl\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\pl\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>pl\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\pt-br\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>pt-br\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\pt-pt\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>pt-pt\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\ru\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>ru\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\sv\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>sv\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\zh-cn\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>zh-cn\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\zh-tw\Microsoft.Live.Controls.resources.dll">
+      <PackagePath>zh-tw\Microsoft.Live.Controls.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\de-DE\Telerik.Windows.Controls.ImageEditor.resources.dll">
+      <PackagePath>de-DE\Telerik.Windows.Controls.ImageEditor.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\fr-FR\Telerik.Windows.Controls.ImageEditor.resources.dll">
+      <PackagePath>fr-FR\Telerik.Windows.Controls.ImageEditor.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\it-IT\Telerik.Windows.Controls.ImageEditor.resources.dll">
+      <PackagePath>it-IT\Telerik.Windows.Controls.ImageEditor.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\de-DE\Telerik.Windows.Controls.Input.resources.dll">
+      <PackagePath>de-DE\Telerik.Windows.Controls.Input.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\fr-FR\Telerik.Windows.Controls.Input.resources.dll">
+      <PackagePath>fr-FR\Telerik.Windows.Controls.Input.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\it-IT\Telerik.Windows.Controls.Input.resources.dll">
+      <PackagePath>it-IT\Telerik.Windows.Controls.Input.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\de-DE\Telerik.Windows.Controls.Primitives.resources.dll">
+      <PackagePath>de-DE\Telerik.Windows.Controls.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\fr-FR\Telerik.Windows.Controls.Primitives.resources.dll">
+      <PackagePath>fr-FR\Telerik.Windows.Controls.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\it-IT\Telerik.Windows.Controls.Primitives.resources.dll">
+      <PackagePath>it-IT\Telerik.Windows.Controls.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\PhoneDirect3DXamlAppComponent.winmd">
+      <PackagePath>PhoneDirect3DXamlAppComponent.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\Moga.Windows.Phone.winmd">
+      <PackagePath>Moga.Windows.Phone.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\AdMob WP8\windowsphone8\GoogleAds.xml">
+      <PackagePath>GoogleAds.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.xml">
+      <PackagePath>Microsoft.Advertising.Mobile.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI.xml">
+      <PackagePath>Microsoft.Advertising.Mobile.UI.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Controls.Data.xml">
+      <PackagePath>Telerik.Windows.Controls.Data.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Controls.DataVisualization.xml">
+      <PackagePath>Telerik.Windows.Controls.DataVisualization.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Controls.ImageEditor.xml">
+      <PackagePath>Telerik.Windows.Controls.ImageEditor.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Controls.Input.xml">
+      <PackagePath>Telerik.Windows.Controls.Input.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Controls.Primitives.xml">
+      <PackagePath>Telerik.Windows.Controls.Primitives.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Core.xml">
+      <PackagePath>Telerik.Windows.Core.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Data.xml">
+      <PackagePath>Telerik.Windows.Data.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WriteableBitmapEx.1.0.9.0\lib\WindowsPhone8\WriteableBitmapExWinPhone.xml">
+      <PackagePath>WriteableBitmapExWinPhone.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\packages\WriteableBitmapEx.1.0.9.0\lib\WindowsPhone8\WriteableBitmapExWinPhoneXnaDependant.xml">
+      <PackagePath>WriteableBitmapExWinPhoneXnaDependant.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\SquareTile150x150.png">
+      <PackagePath>Assets\SquareTile150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\SquareTile71x71.png">
+      <PackagePath>Assets\SquareTile71x71.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\appbar.link.png">
+      <PackagePath>Assets\Icons\appbar.link.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\appbar.question.png">
+      <PackagePath>Assets\Icons\appbar.question.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\information.circle.png">
+      <PackagePath>Assets\Icons\information.circle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\play.png">
+      <PackagePath>Assets\Icons\play.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\search.png">
+      <PackagePath>Assets\Icons\search.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\selectall.png">
+      <PackagePath>Assets\Icons\selectall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\selectnone.png">
+      <PackagePath>Assets\Icons\selectnone.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\no_snapshot_gbc.png">
+      <PackagePath>Assets\no_snapshot_gbc.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\FlipCycleTileSmallFilled.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileSmallFilled.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\FlipCycleTileSmallFilledGBC.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileSmallFilledGBC.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\crop_pointer.png">
+      <PackagePath>Assets\crop_pointer.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\ApplicationBar.Cancel.png">
+      <PackagePath>Assets\ApplicationBar.Cancel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\ApplicationBar.Check.png">
+      <PackagePath>Assets\ApplicationBar.Check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\ApplicationIconFilled.png">
+      <PackagePath>Assets\ApplicationIconFilled.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\ApplicationIconFilledGBC.png">
+      <PackagePath>Assets\ApplicationIconFilledGBC.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\appbar.lock.png">
+      <PackagePath>Assets\Icons\appbar.lock.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\appbar.unlock.png">
+      <PackagePath>Assets\Icons\appbar.unlock.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\marketplace.png">
+      <PackagePath>Assets\Icons\marketplace.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\noad_icon.png">
+      <PackagePath>Assets\Icons\noad_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\noad_plus_icon.png">
+      <PackagePath>Assets\Icons\noad_plus_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\open.png">
+      <PackagePath>Assets\Icons\open.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\plus_sign.png">
+      <PackagePath>Assets\Icons\plus_sign.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\social.like.png">
+      <PackagePath>Assets\Icons\social.like.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\FlipCycleTileLargeGBC.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileLargeGBC.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\FlipCycleTileMediumGBC.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileMediumGBC.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\FlipCycleTileSmallGBC.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileSmallGBC.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\icon176x176GBC.png">
+      <PackagePath>Assets\Tiles\icon176x176GBC.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\icon33x33GBC.png">
+      <PackagePath>Assets\Tiles\icon33x33GBC.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\icon69x69GBC.png">
+      <PackagePath>Assets\Tiles\icon69x69GBC.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\no_snapshot.png">
+      <PackagePath>Assets\no_snapshot.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\icon176x176.png">
+      <PackagePath>Assets\Tiles\icon176x176.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\icon33x33.png">
+      <PackagePath>Assets\Tiles\icon33x33.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\icon69x69.png">
+      <PackagePath>Assets\Tiles\icon69x69.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\tileIcon.png">
+      <PackagePath>tileIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Toolkit.Content\ApplicationBar.Add.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Toolkit.Content\ApplicationBar.Cancel.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Cancel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Toolkit.Content\ApplicationBar.Check.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Toolkit.Content\ApplicationBar.Delete.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Delete.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Toolkit.Content\ApplicationBar.Select.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Select.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\AlignmentGrid.png">
+      <PackagePath>Assets\AlignmentGrid.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\add.png">
+      <PackagePath>Assets\Icons\add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\back.png">
+      <PackagePath>Assets\Icons\back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\basecircle.png">
+      <PackagePath>Assets\Icons\basecircle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\cancel.png">
+      <PackagePath>Assets\Icons\cancel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\check.png">
+      <PackagePath>Assets\Icons\check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\close.png">
+      <PackagePath>Assets\Icons\close.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\delete.png">
+      <PackagePath>Assets\Icons\delete.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\download.png">
+      <PackagePath>Assets\Icons\download.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\edit.png">
+      <PackagePath>Assets\Icons\edit.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\favs.addto.png">
+      <PackagePath>Assets\Icons\favs.addto.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\favs.png">
+      <PackagePath>Assets\Icons\favs.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\feature.alarm.png">
+      <PackagePath>Assets\Icons\feature.alarm.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\feature.calendar.png">
+      <PackagePath>Assets\Icons\feature.calendar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\feature.camera.png">
+      <PackagePath>Assets\Icons\feature.camera.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\feature.email.png">
+      <PackagePath>Assets\Icons\feature.email.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\feature.phone.png">
+      <PackagePath>Assets\Icons\feature.phone.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\feature.search.png">
+      <PackagePath>Assets\Icons\feature.search.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\feature.settings.png">
+      <PackagePath>Assets\Icons\feature.settings.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\feature.video.png">
+      <PackagePath>Assets\Icons\feature.video.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\folder.png">
+      <PackagePath>Assets\Icons\folder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\like.png">
+      <PackagePath>Assets\Icons\like.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\microphone.png">
+      <PackagePath>Assets\Icons\microphone.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\minus.png">
+      <PackagePath>Assets\Icons\minus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\new.png">
+      <PackagePath>Assets\Icons\new.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\next.png">
+      <PackagePath>Assets\Icons\next.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\overflowdots.png">
+      <PackagePath>Assets\Icons\overflowdots.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\questionmark.png">
+      <PackagePath>Assets\Icons\questionmark.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\refresh.png">
+      <PackagePath>Assets\Icons\refresh.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\save.png">
+      <PackagePath>Assets\Icons\save.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\share.png">
+      <PackagePath>Assets\Icons\share.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\stop.png">
+      <PackagePath>Assets\Icons\stop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\sync.png">
+      <PackagePath>Assets\Icons\sync.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\transport.ff.png">
+      <PackagePath>Assets\Icons\transport.ff.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\transport.pause.png">
+      <PackagePath>Assets\Icons\transport.pause.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\transport.play.png">
+      <PackagePath>Assets\Icons\transport.play.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\upload.png">
+      <PackagePath>Assets\Icons\upload.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\AlignmentGrid.png">
+      <PackagePath>Assets\Icons\AlignmentGrid.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\ApplicationIcon.png">
+      <PackagePath>Assets\Icons\ApplicationIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\FlipCycleTileLarge.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\FlipCycleTileMedium.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\FlipCycleTileSmall.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\VoiceCommandDefinitions.xml">
+      <PackagePath>VoiceCommandDefinitions.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\VBA8publicKey.xml">
+      <PackagePath>Assets\VBA8publicKey.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_a_button_gbasp.dds">
+      <PackagePath>Assets\Direct3D\pad_a_button_gbasp.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_b_button_gbasp.dds">
+      <PackagePath>Assets\Direct3D\pad_b_button_gbasp.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_l_button_gbasp.dds">
+      <PackagePath>Assets\Direct3D\pad_l_button_gbasp.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_r_button_gbasp.dds">
+      <PackagePath>Assets\Direct3D\pad_r_button_gbasp.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_select_gbasp.dds">
+      <PackagePath>Assets\Direct3D\pad_select_gbasp.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_start_gbasp.dds">
+      <PackagePath>Assets\Direct3D\pad_start_gbasp.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\thumbstick_gbasp.dds">
+      <PackagePath>Assets\Direct3D\thumbstick_gbasp.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_cross_gbasp.dds">
+      <PackagePath>Assets\Direct3D\pad_cross_gbasp.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\divider.dds">
+      <PackagePath>Assets\Direct3D\divider.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_a_button_color.dds">
+      <PackagePath>Assets\Direct3D\pad_a_button_color.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_b_button_color.dds">
+      <PackagePath>Assets\Direct3D\pad_b_button_color.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_cross_color.dds">
+      <PackagePath>Assets\Direct3D\pad_cross_color.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_l_button_color.dds">
+      <PackagePath>Assets\Direct3D\pad_l_button_color.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_r_button_color.dds">
+      <PackagePath>Assets\Direct3D\pad_r_button_color.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_select_color.dds">
+      <PackagePath>Assets\Direct3D\pad_select_color.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_start.dds">
+      <PackagePath>Assets\Direct3D\pad_start.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_select.dds">
+      <PackagePath>Assets\Direct3D\pad_select.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_b_button.dds">
+      <PackagePath>Assets\Direct3D\pad_b_button.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_a_button.dds">
+      <PackagePath>Assets\Direct3D\pad_a_button.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_start_color.dds">
+      <PackagePath>Assets\Direct3D\pad_start_color.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\resumetext.dds">
+      <PackagePath>Assets\Direct3D\resumetext.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\thumbstick_color.dds">
+      <PackagePath>Assets\Direct3D\thumbstick_color.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_cross.dds">
+      <PackagePath>Assets\Direct3D\pad_cross.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_l_button.dds">
+      <PackagePath>Assets\Direct3D\pad_l_button.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\pad_r_button.dds">
+      <PackagePath>Assets\Direct3D\pad_r_button.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\thumbstick.dds">
+      <PackagePath>Assets\Direct3D\thumbstick.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Direct3D\thumbstickcenter.dds">
+      <PackagePath>Assets\Direct3D\thumbstickcenter.dds</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\GameboyAdvance.jpg">
+      <PackagePath>Assets\GameboyAdvance.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\SplashScreenImage.screen-720p.jpg">
+      <PackagePath>SplashScreenImage.screen-720p.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\SplashScreenImage.screen-WVGA.jpg">
+      <PackagePath>SplashScreenImage.screen-WVGA.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\SplashScreenImage.screen-WXGA.jpg">
+      <PackagePath>SplashScreenImage.screen-WXGA.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\CustomTheme\LightTheme.xaml">
+      <PackagePath>CustomTheme\LightTheme.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\CustomTheme\DarkTheme.xaml">
+      <PackagePath>CustomTheme\DarkTheme.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\README_FIRST.txt">
+      <PackagePath>README_FIRST.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\vba-over.ini">
+      <PackagePath>Assets\vba-over.ini</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Bunny Advance %28Demo%29.gba">
+      <PackagePath>Assets\Bunny Advance %28Demo%29.gba</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Pong.gb">
+      <PackagePath>Assets\Pong.gb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\SimplePixelShader.cso">
+      <PackagePath>SimplePixelShader.cso</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\SimpleVertexShader.cso">
+      <PackagePath>SimpleVertexShader.cso</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\SpriteBatch_VS.cso">
+      <PackagePath>SpriteBatch_VS.cso</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\bin\ARM\DebugDevice\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00.Phone.Debug</Name>
+      <Version>12.0.30113.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Phone.Debug, MinVersion = 12.0.30113.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.12.00.Phone.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00.Phone.Debug</Name>
+      <Version>12.0.30113.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Phone.Debug, MinVersion = 12.0.30113.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.12.00.Phone.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

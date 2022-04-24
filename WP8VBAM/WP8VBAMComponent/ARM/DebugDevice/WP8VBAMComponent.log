@@ -1,0 +1,19 @@
+﻿  EmulatorRenderer.cpp
+EmulatorRenderer.cpp(119): warning C4973: 'Windows::Graphics::Display::DisplayPropertiesEventHandler' : marked as deprecated
+          Message: 'DisplayProperties may be altered or unavailable for releases after Windows Phone 8.1. Instead, use DisplayInformation.'
+          This diagnostic occurred while importing type 'Windows::Graphics::Display::DisplayPropertiesEventHandler ' from assembly 'Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null'.
+          This diagnostic occurred while importing type 'Windows::Graphics::Display::DisplayProperties ' from assembly 'Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null'.
+EmulatorRenderer.cpp(119): warning C4973: 'Windows::Graphics::Display::DisplayProperties::ResolutionScale::get' : marked as deprecated
+          Message: 'ResolutionScale is not supported on Windows Phone, and can return incorrect results. Instead, use RawPixelsPerViewPixel'
+EmulatorRenderer.cpp(120): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+EmulatorRenderer.cpp(121): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+EmulatorRenderer.cpp(125): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+EmulatorRenderer.cpp(128): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+EmulatorRenderer.cpp(361): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+EmulatorRenderer.cpp(375): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+EmulatorRenderer.cpp(432): warning C4973: 'Windows::Graphics::Display::DisplayProperties::ResolutionScale::get' : marked as deprecated
+          Message: 'ResolutionScale is not supported on Windows Phone, and can return incorrect results. Instead, use RawPixelsPerViewPixel'
+EmulatorRenderer.cpp(433): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+EmulatorRenderer.cpp(482): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+EmulatorRenderer.cpp(483): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+  WP8VBAMComponent.vcxproj -> C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\WP8VBAMComponent.dll

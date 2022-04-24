@@ -51,7 +51,7 @@ void systemOnSoundShutdown() { }
 extern SoundDriver *newXAudio2_Output();
 extern void soundShutdown();
 void systemGbPrint(unsigned char *, int, int, int, int, int) { }
-Moga::Windows::Phone::ControllerManager^ GetMogaController(void);
+//FG Moga::Windows::Phone::ControllerManager^ GetMogaController(void);
 void GetMogaMapping(int pressedButton, bool* a, bool* b, bool* l, bool* r );
 void GetMotionMapping(int tiltDirection, bool* left, bool* right, bool* up, bool* down, bool* a, bool* b, bool* l, bool* r);
 
@@ -447,155 +447,155 @@ u32 systemReadJoypad(int gamepad)
 		GetMotionMapping(settings->MotionDown, &left, &right, &up, &down, &a, &b, &l, &r);
 
 
-	//Moga
-	using namespace Moga::Windows::Phone;
-	Moga::Windows::Phone::ControllerManager^ ctrl = Direct3DBackground::getController();
-	if(EmulatorSettings::Current->UseMogaController && ctrl != nullptr && ctrl->GetState(Moga::Windows::Phone::ControllerState::Connection) == ControllerResult::Connected)
-	{
-		//pro only, the pocket version has the left joy stick output to both Axis and directional Keycode.
-		if (ctrl->GetState(Moga::Windows::Phone::ControllerState::SelectedVersion) != ControllerResult::VersionMoga ) 
-		{
-			float axis_x = ctrl->GetAxisValue(Axis::X);
-			float axis_y = ctrl->GetAxisValue(Axis::Y);
+	//FG Moga
+	//using namespace Moga::Windows::Phone;
+	//Moga::Windows::Phone::ControllerManager^ ctrl = Direct3DBackground::getController();
+	//if(EmulatorSettings::Current->UseMogaController && ctrl != nullptr && ctrl->GetState(Moga::Windows::Phone::ControllerState::Connection) == ControllerResult::Connected)
+	//{
+	//	//pro only, the pocket version has the left joy stick output to both Axis and directional Keycode.
+	//	if (ctrl->GetState(Moga::Windows::Phone::ControllerState::SelectedVersion) != ControllerResult::VersionMoga ) 
+	//	{
+	//		float axis_x = ctrl->GetAxisValue(Axis::X);
+	//		float axis_y = ctrl->GetAxisValue(Axis::Y);
 
-			float angle = 0;
-			if (axis_x == 0)
-			{
-				if (axis_y > 0)
-					angle = 1.571f;
-				else if (axis_y < 0)
-					angle = 4.712f;
-				else
-					angle = 1000.0f; //non existent value
-			}
-			else if (axis_x > 0)
-			{
-				angle = atan(axis_y / axis_x);
+	//		float angle = 0;
+	//		if (axis_x == 0)
+	//		{
+	//			if (axis_y > 0)
+	//				angle = 1.571f;
+	//			else if (axis_y < 0)
+	//				angle = 4.712f;
+	//			else
+	//				angle = 1000.0f; //non existent value
+	//		}
+	//		else if (axis_x > 0)
+	//		{
+	//			angle = atan(axis_y / axis_x);
 
-				if (angle < 0)
-					angle += 6.283f;
-			}
-			else if (axis_x <0)
-			{
-				angle = atan(axis_y / axis_x) +  3.142f;
-			}
+	//			if (angle < 0)
+	//				angle += 6.283f;
+	//		}
+	//		else if (axis_x <0)
+	//		{
+	//			angle = atan(axis_y / axis_x) +  3.142f;
+	//		}
 
-			//convert to degree
-			angle = angle / 3.142f * 180.0f;
-		
-			if ( angle <= 22.5f)
-			{
-				right = true;
-			}
-			else if ( angle <= 67.5f)
-			{
-				right = true;
-				up = true;
-			}
-			else if (angle <= 112.5f)
-			{
-				up = true;
-			}
-			else if (  angle <= 157.5f)
-			{
-				up = true;
-				left = true;
-			}
-			else if (angle <= 202.5f)
-			{
-				left = true;
-			}
-			else if (angle <= 247.5f)
-			{
-				left = true;
-				down = true;
-			}
-			else if (angle <= 292.5f)
-			{
-				down = true;
-			}
-			else if (angle <= 337.5f)
-			{
-				down = true;
-				right = true;
-			}
-			else if (angle <= 360.0f)
-			{
-				right = true;
-			}
-		}
+	//		//convert to degree
+	//		angle = angle / 3.142f * 180.0f;
+	//	
+	//		if ( angle <= 22.5f)
+	//		{
+	//			right = true;
+	//		}
+	//		else if ( angle <= 67.5f)
+	//		{
+	//			right = true;
+	//			up = true;
+	//		}
+	//		else if (angle <= 112.5f)
+	//		{
+	//			up = true;
+	//		}
+	//		else if (  angle <= 157.5f)
+	//		{
+	//			up = true;
+	//			left = true;
+	//		}
+	//		else if (angle <= 202.5f)
+	//		{
+	//			left = true;
+	//		}
+	//		else if (angle <= 247.5f)
+	//		{
+	//			left = true;
+	//			down = true;
+	//		}
+	//		else if (angle <= 292.5f)
+	//		{
+	//			down = true;
+	//		}
+	//		else if (angle <= 337.5f)
+	//		{
+	//			down = true;
+	//			right = true;
+	//		}
+	//		else if (angle <= 360.0f)
+	//		{
+	//			right = true;
+	//		}
+	//	}
 
-		
-
-
-		if(ctrl->GetKeyCode(KeyCode::Start) == ControllerAction::Pressed)
-		{
-			start = true;
-		}
-
-		if(ctrl->GetKeyCode(KeyCode::Select) == ControllerAction::Pressed)
-		{
-			select = true;
-		}
-
-		if(ctrl->GetKeyCode(KeyCode::DirectionLeft) == ControllerAction::Pressed)
-		{
-			left = true;
-		}
-
-		if(ctrl->GetKeyCode(KeyCode::DirectionRight) == ControllerAction::Pressed)
-		{
-			right = true;
-		}
-
-		if(ctrl->GetKeyCode(KeyCode::DirectionUp) == ControllerAction::Pressed)
-		{
-			up = true;
-		}
-
-		if(ctrl->GetKeyCode(KeyCode::DirectionDown) == ControllerAction::Pressed)
-		{
-			down = true;
-		}
-
-		if(ctrl->GetKeyCode(KeyCode::A) == ControllerAction::Pressed )
-		{
-			GetMogaMapping(settings->MogaA, &a, &b, &l, &r );
-		}
-
-		
-		if(ctrl->GetKeyCode(KeyCode::B) == ControllerAction::Pressed)
-			GetMogaMapping(settings->MogaB, &a, &b, &l, &r );
+	//	
 
 
-		if (ctrl->GetKeyCode(KeyCode::X) == ControllerAction::Pressed)
-			GetMogaMapping(settings->MogaX, &a, &b, &l, &r );
+	//	if(ctrl->GetKeyCode(KeyCode::Start) == ControllerAction::Pressed)
+	//	{
+	//		start = true;
+	//	}
+
+	//	if(ctrl->GetKeyCode(KeyCode::Select) == ControllerAction::Pressed)
+	//	{
+	//		select = true;
+	//	}
+
+	//	if(ctrl->GetKeyCode(KeyCode::DirectionLeft) == ControllerAction::Pressed)
+	//	{
+	//		left = true;
+	//	}
+
+	//	if(ctrl->GetKeyCode(KeyCode::DirectionRight) == ControllerAction::Pressed)
+	//	{
+	//		right = true;
+	//	}
+
+	//	if(ctrl->GetKeyCode(KeyCode::DirectionUp) == ControllerAction::Pressed)
+	//	{
+	//		up = true;
+	//	}
+
+	//	if(ctrl->GetKeyCode(KeyCode::DirectionDown) == ControllerAction::Pressed)
+	//	{
+	//		down = true;
+	//	}
+
+	//	if(ctrl->GetKeyCode(KeyCode::A) == ControllerAction::Pressed )
+	//	{
+	//		GetMogaMapping(settings->MogaA, &a, &b, &l, &r );
+	//	}
+
+	//	
+	//	if(ctrl->GetKeyCode(KeyCode::B) == ControllerAction::Pressed)
+	//		GetMogaMapping(settings->MogaB, &a, &b, &l, &r );
 
 
-		if(ctrl->GetKeyCode(KeyCode::Y) == ControllerAction::Pressed)
-			GetMogaMapping(settings->MogaY, &a, &b, &l, &r );
-
-		if(ctrl->GetKeyCode(KeyCode::L1) == ControllerAction::Pressed )
-			GetMogaMapping(settings->MogaL1, &a, &b, &l, &r );
-
-		if (abs(ctrl->GetAxisValue(Axis::LeftTrigger)) > 0.5f)
-			GetMogaMapping(settings->MogaL2, &a, &b, &l, &r );
+	//	if (ctrl->GetKeyCode(KeyCode::X) == ControllerAction::Pressed)
+	//		GetMogaMapping(settings->MogaX, &a, &b, &l, &r );
 
 
-		if(ctrl->GetKeyCode(KeyCode::R1) == ControllerAction::Pressed )
-			GetMogaMapping(settings->MogaR1, &a, &b, &l, &r );
+	//	if(ctrl->GetKeyCode(KeyCode::Y) == ControllerAction::Pressed)
+	//		GetMogaMapping(settings->MogaY, &a, &b, &l, &r );
+
+	//	if(ctrl->GetKeyCode(KeyCode::L1) == ControllerAction::Pressed )
+	//		GetMogaMapping(settings->MogaL1, &a, &b, &l, &r );
+
+	//	if (abs(ctrl->GetAxisValue(Axis::LeftTrigger)) > 0.5f)
+	//		GetMogaMapping(settings->MogaL2, &a, &b, &l, &r );
 
 
-		if (abs(ctrl->GetAxisValue(Axis::RightTrigger)) > 0.5f)
-			GetMogaMapping(settings->MogaR2, &a, &b, &l, &r );
+	//	if(ctrl->GetKeyCode(KeyCode::R1) == ControllerAction::Pressed )
+	//		GetMogaMapping(settings->MogaR1, &a, &b, &l, &r );
 
-		if(ctrl->GetKeyCode(KeyCode::ThumbLeft) == ControllerAction::Pressed )
-			GetMogaMapping(settings->MogaLeftJoystick, &a, &b, &l, &r );
 
-		if(ctrl->GetKeyCode(KeyCode::ThumbRight) == ControllerAction::Pressed )
-			GetMogaMapping(settings->MogaRightJoystick, &a, &b, &l, &r );
+	//	if (abs(ctrl->GetAxisValue(Axis::RightTrigger)) > 0.5f)
+	//		GetMogaMapping(settings->MogaR2, &a, &b, &l, &r );
 
-	}
+	//	if(ctrl->GetKeyCode(KeyCode::ThumbLeft) == ControllerAction::Pressed )
+	//		GetMogaMapping(settings->MogaLeftJoystick, &a, &b, &l, &r );
+
+	//	if(ctrl->GetKeyCode(KeyCode::ThumbRight) == ControllerAction::Pressed )
+	//		GetMogaMapping(settings->MogaRightJoystick, &a, &b, &l, &r );
+
+	//}
 
 	try
 	{

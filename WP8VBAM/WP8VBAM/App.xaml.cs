@@ -63,77 +63,10 @@ namespace PhoneDirect3DXamlAppInterop
 
             App.LastAutoBackupTime = DateTime.Now;
 
-            HasAds = true;
-            IsPremium = false;
-
-
-#if BETA
+            HasAds = false;
             IsPremium = true;
-#endif
-            try
-            {
-                EmulatorSettings.Current.IsTrial = IsTrial;
-            
 
-            
-
-                if (CurrentApp.LicenseInformation.ProductLicenses["noads_premium"].IsActive)
-                {
-                    HasAds = false;
-                    IsPremium = true;
-                    return; //no need to check for other 2 licenses
-                }
-
-                //get information on in-app purchase
-                if (CurrentApp.LicenseInformation.ProductLicenses["removeads"].IsActive)
-                    HasAds = false;
-
-
-                if (CurrentApp.LicenseInformation.ProductLicenses["premiumfeatures"].IsActive)
-                    IsPremium = true;
-            }
-            catch (Exception) { }
-            //check if a promotion code exists
-            if (metroSettings.PromotionCode != null && metroSettings.PromotionCode != "")
-            {
-                byte[] byteCode;
-                try
-                {
-                    byteCode = Convert.FromBase64String(metroSettings.PromotionCode);
-                }
-                catch (Exception)
-                {
-                    return;
-                }
-
-
-                string dataString = Convert.ToBase64String(DeviceExtendedProperties.GetValue("DeviceUniqueId") as byte[]) + "_noads_premium";
-
-                // Create byte arrays to hold original, encrypted, and decrypted data.
-
-                UTF8Encoding ByteConverter = new UTF8Encoding();
-                byte[] originalData = ByteConverter.GetBytes(dataString);
-
-
-
-                RSACryptoServiceProvider RSAalg = new RSACryptoServiceProvider(2048);
-
-                Stream src = Application.GetResourceStream(new Uri("Assets/VBA8publicKey.xml", UriKind.Relative)).Stream;
-                using (StreamReader sr = new StreamReader(src))
-                {
-                    string text = sr.ReadToEnd();
-                    RSAalg.FromXmlString(text);
-                }
-
-                RSAParameters Key = RSAalg.ExportParameters(false);
-
-                if (PurchasePage.VerifySignedHash(originalData, byteCode, Key))
-                {
-                    HasAds = false;
-                    IsPremium = true;
-                }
-
-            }
+            EmulatorSettings.Current.IsTrial = IsTrial;
             
         }
 
@@ -578,6 +511,8 @@ namespace PhoneDirect3DXamlAppInterop
                 ret = currentUri.ToLower().Contains(lastRomPlayed.ToLower());
             }
             
+
+
             return ret;
         }
     }

@@ -500,10 +500,11 @@ void EmulatorRenderer::Render()
 		this->dxSpriteBatch->Draw(targetRect,  this->dividerSRV.Get(), tex.Get(), dividerColor);
 	}
 	//===draw virtual controller if moga controller is not loaded
-	using namespace Moga::Windows::Phone;
-	Moga::Windows::Phone::ControllerManager^ ctrl = Direct3DBackground::getController();
-	if (!(EmulatorSettings::Current->UseMogaController && ctrl != nullptr && ctrl->GetState(Moga::Windows::Phone::ControllerState::Connection) == ControllerResult::Connected))
-	{
+	// FG
+	//using namespace Moga::Windows::Phone;
+	//Moga::Windows::Phone::ControllerManager^ ctrl = Direct3DBackground::getController();
+	//if (!(EmulatorSettings::Current->UseMogaController && ctrl != nullptr && ctrl->GetState(Moga::Windows::Phone::ControllerState::Connection) == ControllerResult::Connected))
+	//{
 		this->controller->GetARectangle(&aRectangle);
 		this->controller->GetBRectangle(&bRectangle);
 		this->controller->GetCrossRectangle(&crossRectangle);
@@ -515,7 +516,7 @@ void EmulatorRenderer::Render()
 		this->controller->GetStickCenterRectangle(&centerRect);
 
 		DrawController();
-	}
+	//}
 	this->dxSpriteBatch->End();
 
 	frames++;

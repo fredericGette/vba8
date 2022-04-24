@@ -20,7 +20,7 @@ using namespace Windows::Phone::Graphics::Interop;
 using namespace Windows::Phone::Input::Interop;
 using namespace Windows::ApplicationModel::Core;
 
-Moga::Windows::Phone::ControllerManager^ Direct3DBackground::mogacontroller;
+//FG Moga::Windows::Phone::ControllerManager^ Direct3DBackground::mogacontroller;
 Windows::Devices::Sensors::Accelerometer^ Direct3DBackground::m_accelerometer;
 Windows::Devices::Sensors::Inclinometer^ Direct3DBackground::m_inclinometer;
 
@@ -240,21 +240,21 @@ namespace PhoneDirect3DXamlAppComponent
 		m_renderer->SetVirtualController(this->vController);
 		m_renderer->UpdateForWindowSizeChange(WindowBounds.Width, WindowBounds.Height);
 		
-		//moga controler
-		if (EmulatorSettings::Current->UseMogaController)
-		{
-			if (mogacontroller == nullptr)
-			{
-				try 
-				{
-					mogacontroller = ref new Moga::Windows::Phone::ControllerManager();
-					mogacontroller->Connect() ;
-				}
-				catch(Platform::Exception^ ex)
-				{
-				}
-			}
-		}
+		//FG moga controler
+		//if (EmulatorSettings::Current->UseMogaController)
+		//{
+		//	if (mogacontroller == nullptr)
+		//	{
+		//		try 
+		//		{
+		//			mogacontroller = ref new Moga::Windows::Phone::ControllerManager();
+		//			mogacontroller->Connect() ;
+		//		}
+		//		catch(Platform::Exception^ ex)
+		//		{
+		//		}
+		//	}
+		//}
 
 		//motion control
 		if (EmulatorSettings::Current->UseMotionControl == 1)
@@ -394,7 +394,7 @@ namespace PhoneDirect3DXamlAppComponent
 
 		const int length = 256; 
 
-		SetLinkTimeout(timeout);
+		//FG SetLinkTimeout(timeout);
 	
 
 		if (!isServer ) //client
@@ -402,19 +402,19 @@ namespace PhoneDirect3DXamlAppComponent
 			std::wstring fooW(ipaddress->Begin());
 			std::string fooA(fooW.begin(), fooW.end());
 
-			bool valid = SetLinkServerHost(fooA.c_str());
-			if (!valid) {
-				return "Error";
-			}
+			//FG bool valid = SetLinkServerHost(fooA.c_str());
+			//if (!valid) {
+			//	return "Error";
+			//}
 		}
 
-		EnableLinkServer(isServer,  numplayers - 1);
+		//FG EnableLinkServer(isServer,  numplayers - 1);
 
 		char localhost[length];
 
 		if (isServer) // server
 		{
-			GetLinkServerHost(localhost, length);
+			//FG GetLinkServerHost(localhost, length);
 			//convert to Platform::String
 			wchar_t buffer[ length ];
 			mbstowcs( buffer, localhost, length );
@@ -429,7 +429,7 @@ namespace PhoneDirect3DXamlAppComponent
 
 		return create_async([]
 		{
-			gba_conect_state = InitLink(LINK_CABLE_SOCKET);
+			//FG gba_conect_state = InitLink(LINK_CABLE_SOCKET);
 	
 
 			if (gba_conect_state == LINK_NEEDS_UPDATE) 
@@ -437,7 +437,7 @@ namespace PhoneDirect3DXamlAppComponent
 				while (gba_conect_state == LINK_NEEDS_UPDATE) 
 				{
 					char message[256];
-					gba_conect_state = ConnectLinkUpdate(message, 256);
+					//FG gba_conect_state = ConnectLinkUpdate(message, 256);
 
 					if (user_abort_connection)
 					{
@@ -449,8 +449,8 @@ namespace PhoneDirect3DXamlAppComponent
 
 			}
 
-			if (gba_conect_state == LINK_ABORT)
-				CloseLink();
+			//FG if (gba_conect_state == LINK_ABORT)
+			//	CloseLink();
 
 			return (int)gba_conect_state;
 		});

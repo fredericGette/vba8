@@ -1,0 +1,214 @@
+﻿  compilation object save succeeded; see C:\Users\frede\Source\Repos\vba8\ARM\Debug\WP8VBAMComponent\SimplePixelShader.cso
+  compilation object save succeeded; see C:\Users\frede\Source\Repos\vba8\ARM\Debug\WP8VBAMComponent\SimpleVertexShader.cso
+  compilation header save succeeded; see C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAMComponent\SpriteBatch_PS.h
+  compilation header save succeeded; see C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAMComponent\SpriteBatch_VS.h
+  compilation object save succeeded; see C:\Users\frede\Source\Repos\vba8\ARM\Debug\WP8VBAMComponent\SpriteBatch_VS.cso
+  pch.cpp
+  CheatData.cpp
+  vbaFunctions.cpp
+  Blip_Buffer.cpp
+  Effects_Buffer.cpp
+VBAM\apu\Effects_Buffer.cpp(65): warning C4291: 'void *Effects_Buffer::buf_t::operator new(size_t,void *)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+          c:\users\frede\source\repos\vba8\wp8vbam\wp8vbamcomponent\vbam\apu\Effects_Buffer.h(91) : see declaration of 'Effects_Buffer::buf_t::operator new'
+  Gb_Apu.cpp
+  Gb_Apu_State.cpp
+  Gb_Oscs.cpp
+  Multi_Buffer.cpp
+VBAM\apu\Gb_Apu_State.cpp(66): warning C4800: 'gb_apu_state_t::val_t' : forcing value to bool 'true' or 'false' (performance warning)
+VBAM\apu\Gb_Apu_State.cpp(67): warning C4800: 'gb_apu_state_t::val_t' : forcing value to bool 'true' or 'false' (performance warning)
+VBAM\apu\Gb_Apu_State.cpp(84): warning C4800: 'gb_apu_state_t::val_t' : forcing value to bool 'true' or 'false' (performance warning)
+VBAM\apu\Gb_Apu_State.cpp(92): warning C4800: 'gb_apu_state_t::val_t' : forcing value to bool 'true' or 'false' (performance warning)
+  Patch.cpp
+  XAudio2.cpp
+  agbprint.cpp
+VBAM\common\Patch.cpp(303): warning C4244: 'return' : conversion from 's64' to 'int', possible loss of data
+VBAM\common\Patch.cpp(319): warning C4244: 'initializing' : conversion from 's64' to 'int', possible loss of data
+VBAM\common\Patch.cpp(345): warning C4244: 'initializing' : conversion from 's64' to 'int', possible loss of data
+VBAM\common\Patch.cpp(363): warning C4244: 'initializing' : conversion from 's64' to 'int', possible loss of data
+  armdis.cpp
+  bios.cpp
+  Cheats.cpp
+  CheatSearch.cpp
+  EEprom.cpp
+  elf.cpp
+  Flash.cpp
+  GBA-arm.cpp
+  GBA-thumb.cpp
+  GBA.cpp
+  gbafilter.cpp
+  GBAGfx.cpp
+  GBALink.cpp
+  GBASockClient.cpp
+  Globals.cpp
+  Mode0.cpp
+  Mode1.cpp
+  Mode2.cpp
+  Mode3.cpp
+  Mode4.cpp
+  Mode5.cpp
+  RTC.cpp
+  Sound.cpp
+  Sram.cpp
+  GB.cpp
+  gbCheats.cpp
+  gbDis.cpp
+  gbGfx.cpp
+  gbGlobals.cpp
+  gbMemory.cpp
+  gbPrinter.cpp
+  gbSGB.cpp
+  gbSound.cpp
+  Util.cpp
+  CPositionRenderer.cpp
+  DXSpriteBatch.cpp
+  Emulator.cpp
+  EmulatorFileHandler.cpp
+DXSpriteBatch.cpp(319): warning C4244: 'argument' : conversion from 'UINT' to 'float', possible loss of data
+DXSpriteBatch.cpp(443): warning C4244: '=' : conversion from 'UINT' to 'float', possible loss of data
+DXSpriteBatch.cpp(444): warning C4244: '=' : conversion from 'UINT' to 'float', possible loss of data
+  EmulatorSettings.cpp
+  Point.cpp
+CPositionRenderer.cpp(53): warning C4973: 'Windows::Graphics::Display::DisplayPropertiesEventHandler' : marked as deprecated
+          Message: 'DisplayProperties may be altered or unavailable for releases after Windows Phone 8.1. Instead, use DisplayInformation.'
+          This diagnostic occurred while importing type 'Windows::Graphics::Display::DisplayPropertiesEventHandler ' from assembly 'Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null'.
+          This diagnostic occurred while importing type 'Windows::Graphics::Display::DisplayProperties ' from assembly 'Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null'.
+CPositionRenderer.cpp(53): warning C4973: 'Windows::Graphics::Display::DisplayProperties::ResolutionScale::get' : marked as deprecated
+          Message: 'ResolutionScale is not supported on Windows Phone, and can return incorrect results. Instead, use RawPixelsPerViewPixel'
+CPositionRenderer.cpp(54): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+CPositionRenderer.cpp(55): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+CPositionRenderer.cpp(59): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+CPositionRenderer.cpp(62): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+EmulatorFileHandler.cpp(899): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  Rectangle.cpp
+EmulatorFileHandler.cpp(1522): warning C4286: 'Platform::AccessDeniedException ^' : is caught by base class ('Platform::COMException ^') on line 1514
+EmulatorFileHandler.cpp(1602): warning C4286: 'Platform::AccessDeniedException ^' : is caught by base class ('Platform::COMException ^') on line 1594
+  Renderer.cpp
+EmulatorFileHandler.cpp(1675): warning C4244: 'argument' : conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+EmulatorFileHandler.cpp(1676): warning C4244: 'argument' : conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+EmulatorFileHandler.cpp(1684): warning C4018: '<' : signed/unsigned mismatch
+EmulatorFileHandler.cpp(1900): warning C4018: '<' : signed/unsigned mismatch
+EmulatorFileHandler.cpp(2078): warning C4018: '<' : signed/unsigned mismatch
+EmulatorFileHandler.cpp(2118): warning C4018: '<' : signed/unsigned mismatch
+EmulatorFileHandler.cpp(2154): warning C4244: 'argument' : conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+EmulatorFileHandler.cpp(2155): warning C4244: 'argument' : conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+EmulatorFileHandler.cpp(2162): warning C4018: '<' : signed/unsigned mismatch
+  ROMConfig.cpp
+  CPositionComponent.cpp
+  CPositionContentProvider.cpp
+Renderer.cpp(360): warning C4973: 'Windows::Graphics::Display::DisplayPropertiesEventHandler' : marked as deprecated
+          Message: 'DisplayProperties may be altered or unavailable for releases after Windows Phone 8.1. Instead, use DisplayInformation.'
+          This diagnostic occurred while importing type 'Windows::Graphics::Display::DisplayPropertiesEventHandler ' from assembly 'Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null'.
+          This diagnostic occurred while importing type 'Windows::Graphics::Display::DisplayProperties ' from assembly 'Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null'.
+Renderer.cpp(360): warning C4973: 'Windows::Graphics::Display::DisplayProperties::ResolutionScale::get' : marked as deprecated
+          Message: 'ResolutionScale is not supported on Windows Phone, and can return incorrect results. Instead, use RawPixelsPerViewPixel'
+Renderer.cpp(361): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+Renderer.cpp(362): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+Renderer.cpp(366): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+Renderer.cpp(369): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+Renderer.cpp(398): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+Renderer.cpp(399): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+Renderer.cpp(403): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+  CPositionVirtualController.cpp
+CPositionVirtualController.cpp(119): warning C4973: 'Windows::Graphics::Display::DisplayProperties' : marked as deprecated
+          Message: 'DisplayProperties may be altered or unavailable for releases after Windows Phone 8.1. Instead, use DisplayInformation.'
+CPositionVirtualController.cpp(119): warning C4973: 'Windows::Graphics::Display::DisplayPropertiesEventHandler' : marked as deprecated
+          Message: 'DisplayProperties may be altered or unavailable for releases after Windows Phone 8.1. Instead, use DisplayInformation.'
+          This diagnostic occurred while importing type 'Windows::Graphics::Display::DisplayPropertiesEventHandler ' from assembly 'Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null'.
+          This diagnostic occurred while importing type 'Windows::Graphics::Display::DisplayProperties ' from assembly 'Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null'.
+CPositionVirtualController.cpp(119): warning C4973: 'Windows::Graphics::Display::DisplayProperties::ResolutionScale::get' : marked as deprecated
+          Message: 'ResolutionScale is not supported on Windows Phone, and can return incorrect results. Instead, use RawPixelsPerViewPixel'
+CPositionVirtualController.cpp(134): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+CPositionVirtualController.cpp(135): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+CPositionVirtualController.cpp(139): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+CPositionVirtualController.cpp(140): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+CPositionVirtualController.cpp(144): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+CPositionVirtualController.cpp(145): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+CPositionVirtualController.cpp(149): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+CPositionVirtualController.cpp(150): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+CPositionVirtualController.cpp(154): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+CPositionVirtualController.cpp(155): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+CPositionVirtualController.cpp(159): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+CPositionVirtualController.cpp(160): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+CPositionVirtualController.cpp(164): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+CPositionVirtualController.cpp(165): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+  TextureLoader.cpp
+  Ftp.cpp
+  Http.cpp
+  IPAddress.cpp
+VBAM\SFML\src\SFML\Network\Ftp.cpp(404): warning C4244: 'initializing' : conversion from 'std::streamoff' to 'size_t', possible loss of data
+  Packet.cpp
+  SelectorBase.cpp
+  SocketTCP.cpp
+  SocketUDP.cpp
+  SocketHelper.cpp
+  Vector2.cpp
+  Vector3.cpp
+  Vector4.cpp
+  VirtualController.cpp
+  WP8VBAMComponent.cpp
+  EmulatorRenderer.cpp
+  Direct3DBase.cpp
+VirtualController.cpp(136): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(137): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(138): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(139): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(142): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(144): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(147): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(149): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(153): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(155): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(158): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(160): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(165): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(167): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(171): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(173): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(414): warning C4244: '=' : conversion from 'double' to '__int64', possible loss of data
+VirtualController.cpp(430): warning C4973: 'Windows::Graphics::Display::DisplayProperties' : marked as deprecated
+          Message: 'DisplayProperties may be altered or unavailable for releases after Windows Phone 8.1. Instead, use DisplayInformation.'
+VirtualController.cpp(430): warning C4973: 'Windows::Graphics::Display::DisplayPropertiesEventHandler' : marked as deprecated
+          Message: 'DisplayProperties may be altered or unavailable for releases after Windows Phone 8.1. Instead, use DisplayInformation.'
+          This diagnostic occurred while importing type 'Windows::Graphics::Display::DisplayPropertiesEventHandler ' from assembly 'Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null'.
+          This diagnostic occurred while importing type 'Windows::Graphics::Display::DisplayProperties ' from assembly 'Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null'.
+VirtualController.cpp(430): warning C4973: 'Windows::Graphics::Display::DisplayProperties::ResolutionScale::get' : marked as deprecated
+          Message: 'ResolutionScale is not supported on Windows Phone, and can return incorrect results. Instead, use RawPixelsPerViewPixel'
+VirtualController.cpp(437): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(438): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(441): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(442): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(452): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(453): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(494): warning C4973: 'Windows::Graphics::Display::DisplayProperties' : marked as deprecated
+          Message: 'DisplayProperties may be altered or unavailable for releases after Windows Phone 8.1. Instead, use DisplayInformation.'
+VirtualController.cpp(494): warning C4973: 'Windows::Graphics::Display::DisplayProperties::ResolutionScale::get' : marked as deprecated
+          Message: 'ResolutionScale is not supported on Windows Phone, and can return incorrect results. Instead, use RawPixelsPerViewPixel'
+VirtualController.cpp(499): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(500): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+VirtualController.cpp(671): warning C4973: 'Windows::Graphics::Display::DisplayProperties' : marked as deprecated
+          Message: 'DisplayProperties may be altered or unavailable for releases after Windows Phone 8.1. Instead, use DisplayInformation.'
+VirtualController.cpp(671): warning C4973: 'Windows::Graphics::Display::DisplayProperties::ResolutionScale::get' : marked as deprecated
+          Message: 'ResolutionScale is not supported on Windows Phone, and can return incorrect results. Instead, use RawPixelsPerViewPixel'
+EmulatorRenderer.cpp(119): warning C4973: 'Windows::Graphics::Display::DisplayPropertiesEventHandler' : marked as deprecated
+          Message: 'DisplayProperties may be altered or unavailable for releases after Windows Phone 8.1. Instead, use DisplayInformation.'
+          This diagnostic occurred while importing type 'Windows::Graphics::Display::DisplayPropertiesEventHandler ' from assembly 'Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null'.
+          This diagnostic occurred while importing type 'Windows::Graphics::Display::DisplayProperties ' from assembly 'Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null'.
+EmulatorRenderer.cpp(119): warning C4973: 'Windows::Graphics::Display::DisplayProperties::ResolutionScale::get' : marked as deprecated
+          Message: 'ResolutionScale is not supported on Windows Phone, and can return incorrect results. Instead, use RawPixelsPerViewPixel'
+EmulatorRenderer.cpp(120): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+EmulatorRenderer.cpp(121): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+EmulatorRenderer.cpp(125): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+EmulatorRenderer.cpp(128): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+EmulatorRenderer.cpp(361): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+EmulatorRenderer.cpp(375): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+EmulatorRenderer.cpp(432): warning C4973: 'Windows::Graphics::Display::DisplayProperties::ResolutionScale::get' : marked as deprecated
+          Message: 'ResolutionScale is not supported on Windows Phone, and can return incorrect results. Instead, use RawPixelsPerViewPixel'
+EmulatorRenderer.cpp(433): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+EmulatorRenderer.cpp(482): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+EmulatorRenderer.cpp(483): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+  Direct3DContentProvider.cpp
+WP8VBAMComponent.cpp(439): warning C4101: 'message' : unreferenced local variable
+  memgzio.c
+VBAM\common\memgzio.c(676): warning C4101: 'err' : unreferenced local variable
+     Creating library C:\Users\frede\Source\Repos\vba8\ARM\Debug\WP8VBAMComponent\WP8VBAMComponent.lib and object C:\Users\frede\Source\Repos\vba8\ARM\Debug\WP8VBAMComponent\WP8VBAMComponent.exp
+  WP8VBAMComponent.vcxproj -> C:\Users\frede\Source\Repos\vba8\ARM\Debug\WP8VBAMComponent\WP8VBAMComponent.dll
