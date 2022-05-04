@@ -201,6 +201,7 @@
     <ClCompile Include="VBAM\SFML\src\SFML\Network\Win32\SocketHelper.cpp">
       <Filter>vbam\smfl</Filter>
     </ClCompile>
+    <ClCompile Include="Wiimote.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicTimer.h" />
@@ -422,6 +423,7 @@
     <ClInclude Include="VBAM\SFML\include\SFML\Network\SocketUDP.hpp">
       <Filter>vbam\smfl</Filter>
     </ClInclude>
+    <ClInclude Include="Wiimote.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="vbam">

@@ -5,6 +5,7 @@
 #include "TextureLoader.h"
 #include "WP8VBAMComponent.h"
 #include <math.h>
+#include <stdio.h>
 
 using namespace DirectX;
 using namespace Microsoft::WRL;
@@ -191,6 +192,11 @@ void EmulatorRenderer::ChangeOrientation(int orientation)
 
 void EmulatorRenderer::Update(float timeTotal, float timeDelta)
 {
+	//FG
+	//char test[100];
+	//_snprintf(test, sizeof(test), "FPS: %f\n", 1.0f/timeDelta);
+	//OutputDebugStringA(test);
+
 	if(!emulator->IsPaused())
 	{
 		this->elapsedTime += timeDelta;

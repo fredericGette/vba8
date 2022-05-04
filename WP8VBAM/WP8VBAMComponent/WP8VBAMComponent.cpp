@@ -2,7 +2,7 @@
 #include "WP8VBAMComponent.h"
 #include "Direct3DContentProvider.h"
 #include "EmulatorFileHandler.h"
-
+#include "Wiimote.h"
 
 
 #if _DEBUG
@@ -240,6 +240,9 @@ namespace PhoneDirect3DXamlAppComponent
 		m_renderer->SetVirtualController(this->vController);
 		m_renderer->UpdateForWindowSizeChange(WindowBounds.Width, WindowBounds.Height);
 		
+		Wiimote::Controller *WiiController = Wiimote::Controller::GetInstance();
+		WiiController->start();
+
 		//FG moga controler
 		//if (EmulatorSettings::Current->UseMogaController)
 		//{

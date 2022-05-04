@@ -396,12 +396,12 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
       <CompileAsWinRT>true</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(ProjectDir)\VBAM\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\DesktopHeader;$(ProjectDir)\VBAM\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <AdditionalDependencies>d3d11.lib;dxguid.lib;xaudio2.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;dxguid.lib;xaudio2.lib;Ws2_32.lib;$(ProjectDir)\Lib\HID.lib;$(ProjectDir)\Lib\RPCRT4.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
     </Link>
@@ -634,6 +634,7 @@
     <ClInclude Include="Vector3.h" />
     <ClInclude Include="Vector4.h" />
     <ClInclude Include="VirtualController.h" />
+    <ClInclude Include="Wiimote.h" />
     <ClInclude Include="WP8VBAMComponent.h" />
     <ClInclude Include="EmulatorRenderer.h" />
     <ClInclude Include="DirectXHelper.h" />
@@ -1579,6 +1580,7 @@
     <ClCompile Include="Vector3.cpp" />
     <ClCompile Include="Vector4.cpp" />
     <ClCompile Include="VirtualController.cpp" />
+    <ClCompile Include="Wiimote.cpp" />
     <ClCompile Include="WP8VBAMComponent.cpp" />
     <ClCompile Include="EmulatorRenderer.cpp" />
     <ClCompile Include="Direct3DBase.cpp" />

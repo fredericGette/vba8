@@ -3,6 +3,7 @@
 #include "VirtualController.h"
 #include "WP8VBAMComponent.h"
 #include <math.h>  
+#include "Wiimote.h"
 
 using namespace Emulator;
 using namespace PhoneDirect3DXamlAppComponent;
@@ -446,6 +447,48 @@ u32 systemReadJoypad(int gamepad)
 	else if (motionInput & 8)
 		GetMotionMapping(settings->MotionDown, &left, &right, &up, &down, &a, &b, &l, &r);
 
+	Wiimote::Controller *WiiController = Wiimote::Controller::GetInstance();
+	DWORD wiimoteState = WiiController->getState();
+	if (wiimoteState & Wiimote::BUTTON_LEFT)
+	{
+		left = true;
+	}
+	if (wiimoteState & Wiimote::BUTTON_RIGHT)
+	{
+		right = true;
+	}
+	if (wiimoteState & Wiimote::BUTTON_UP)
+	{
+		up = true;
+	}
+	if (wiimoteState & Wiimote::BUTTON_DOWN)
+	{
+		down = true;
+	}
+	if (wiimoteState & Wiimote::BUTTON_ONE)
+	{
+		a = true;
+	}
+	if (wiimoteState & Wiimote::BUTTON_TWO)
+	{
+		b = true;
+	}
+	if (wiimoteState & Wiimote::BUTTON_A)
+	{
+		r = true;
+	}
+	if (wiimoteState & Wiimote::BUTTON_B)
+	{
+		l = true;
+	}
+	if (wiimoteState & Wiimote::BUTTON_HOME)
+	{
+		start = true;
+	}
+	if (wiimoteState & Wiimote::BUTTON_MINUS)
+	{
+		select = true;
+	}
 
 	//FG Moga
 	//using namespace Moga::Windows::Phone;

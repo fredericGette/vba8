@@ -1,6 +1,6 @@
-﻿<xapCache source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\bin\ARM\DebugDevice\WP8VBAM_DebugDevice_ARM.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="4/24/2022 9:52:44 PM">
-  <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\bin\ARM\DebugDevice\resources.pri" archivePath="resources.pri" lastWriteTime="4/24/2022 9:52:32 PM" />
-  <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\obj\ARM\DebugDevice\VBA8.dll" archivePath="VBA8.dll" lastWriteTime="4/24/2022 9:52:30 PM" />
+﻿<xapCache source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\bin\ARM\DebugDevice\WP8VBAM_DebugDevice_ARM.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="5/4/2022 9:22:32 PM">
+  <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\bin\ARM\DebugDevice\resources.pri" archivePath="resources.pri" lastWriteTime="5/4/2022 9:04:22 PM" />
+  <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\obj\ARM\DebugDevice\VBA8.dll" archivePath="VBA8.dll" lastWriteTime="5/4/2022 9:04:21 PM" />
   <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="4/23/2022 8:59:22 AM" />
   <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="4/23/2022 8:59:22 AM" />
   <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\SplashScreen.png" archivePath="Assets\SplashScreen.png" lastWriteTime="4/23/2022 8:59:22 AM" />
@@ -126,7 +126,7 @@
   <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Icons\ApplicationIcon.png" archivePath="Assets\Icons\ApplicationIcon.png" lastWriteTime="4/23/2022 8:58:48 AM" />
   <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="4/23/2022 8:58:48 AM" />
   <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="4/23/2022 8:58:48 AM" />
-  <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\bin\ARM\DebugDevice\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="4/23/2022 1:50:13 PM" />
+  <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\bin\ARM\DebugDevice\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="4/28/2022 9:41:43 PM" />
   <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\bin\ARM\DebugDevice\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="4/23/2022 8:58:48 AM" />
   <file source="C:\Users\frede\Source\Repos\vba8\packages\AdDuplexWP7.2.7.0.2\lib\sl4-windowsphone71\AdDuplex.WindowsPhone.dll" archivePath="AdDuplex.WindowsPhone.dll" lastWriteTime="4/23/2022 8:58:47 AM" />
   <file source="C:\Users\frede\Source\Repos\vba8\packages\CloudSixConnector.1.0.3\lib\wp8\CloudSixConnector.dll" archivePath="CloudSixConnector.dll" lastWriteTime="4/23/2022 8:58:47 AM" />
@@ -139,7 +139,7 @@
   <file source="C:\Users\frede\Source\Repos\vba8\packages\LiveSDK.5.5\lib\WindowsPhone8\Microsoft.Live.dll" archivePath="Microsoft.Live.dll" lastWriteTime="4/23/2022 8:58:47 AM" />
   <file source="C:\Users\frede\Source\Repos\vba8\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="4/23/2022 8:58:48 AM" />
   <file source="C:\Users\frede\Source\Repos\vba8\packages\MobFox.Ads.dll" archivePath="MobFox.Ads.dll" lastWriteTime="4/23/2022 8:58:47 AM" />
-  <file source="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\PhoneDirect3DXamlAppComponent.winmd" archivePath="PhoneDirect3DXamlAppComponent.winmd" lastWriteTime="4/23/2022 1:49:48 PM" />
+  <file source="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\PhoneDirect3DXamlAppComponent.winmd" archivePath="PhoneDirect3DXamlAppComponent.winmd" lastWriteTime="4/28/2022 9:41:23 PM" />
   <file source="C:\Users\frede\Source\Repos\vba8\packages\sharpcompress.0.10.3\lib\portable-net4+sl5+wp8+win8\SharpCompress.dll" archivePath="SharpCompress.dll" lastWriteTime="4/23/2022 8:58:47 AM" />
   <file source="C:\Users\frede\Source\Repos\vba8\packages\SharpGIS.GZipWebClient.1.4.0.0\lib\wp71\SharpGIS.GZipWebClient.dll" archivePath="SharpGIS.GZipWebClient.dll" lastWriteTime="4/23/2022 8:58:47 AM" />
   <file source="C:\Users\frede\Source\Repos\vba8\lib\RCWP\2014.1.226.3040\Telerik.Windows.Controls.Data.dll" archivePath="Telerik.Windows.Controls.Data.dll" lastWriteTime="4/23/2022 8:58:47 AM" />
@@ -166,12 +166,12 @@
   <file source="C:\Users\frede\Source\Repos\vba8\packages\WriteableBitmapEx.1.0.9.0\lib\WindowsPhone8\WriteableBitmapExWinPhone.xml" archivePath="WriteableBitmapExWinPhone.xml" lastWriteTime="4/23/2022 8:58:48 AM" />
   <file source="C:\Users\frede\Source\Repos\vba8\packages\WriteableBitmapEx.1.0.9.0\lib\WindowsPhone8\WriteableBitmapExWinPhoneXnaDependant.xml" archivePath="WriteableBitmapExWinPhoneXnaDependant.xml" lastWriteTime="4/23/2022 8:58:48 AM" />
   <file source="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\Moga.Windows.Phone.dll" archivePath="Moga.Windows.Phone.dll" lastWriteTime="4/23/2022 8:58:47 AM" />
-  <file source="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\WP8VBAMComponent.dll" archivePath="WP8VBAMComponent.dll" lastWriteTime="4/23/2022 1:59:54 PM" />
+  <file source="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\WP8VBAMComponent.dll" archivePath="WP8VBAMComponent.dll" lastWriteTime="5/4/2022 9:22:21 PM" />
   <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\Assets\ApplicationIconFilled.png" archivePath="Assets\ApplicationIconFilled.png" lastWriteTime="4/23/2022 8:58:48 AM" />
-  <file source="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\SimplePixelShader.cso" archivePath="SimplePixelShader.cso" lastWriteTime="4/23/2022 1:48:54 PM" />
-  <file source="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\SimpleVertexShader.cso" archivePath="SimpleVertexShader.cso" lastWriteTime="4/23/2022 1:48:55 PM" />
-  <file source="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\SpriteBatch_VS.cso" archivePath="SpriteBatch_VS.cso" lastWriteTime="4/23/2022 1:48:55 PM" />
-  <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\bin\ARM\DebugDevice\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="4/23/2022 1:50:17 PM" />
-  <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\obj\ARM\DebugDevice\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="4/24/2022 9:52:41 PM" />
-  <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\bin\ARM\DebugDevice\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="4/24/2022 9:52:36 PM" />
+  <file source="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\SimplePixelShader.cso" archivePath="SimplePixelShader.cso" lastWriteTime="4/28/2022 9:35:15 PM" />
+  <file source="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\SimpleVertexShader.cso" archivePath="SimpleVertexShader.cso" lastWriteTime="4/28/2022 9:35:15 PM" />
+  <file source="C:\Users\frede\Source\Repos\vba8\ARM\DebugDevice\WP8VBAMComponent\SpriteBatch_VS.cso" archivePath="SpriteBatch_VS.cso" lastWriteTime="4/28/2022 9:35:16 PM" />
+  <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\bin\ARM\DebugDevice\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="4/28/2022 9:41:43 PM" />
+  <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\obj\ARM\DebugDevice\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="5/4/2022 9:22:29 PM" />
+  <file source="C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\bin\ARM\DebugDevice\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="5/4/2022 9:04:29 PM" />
 </xapCache>
