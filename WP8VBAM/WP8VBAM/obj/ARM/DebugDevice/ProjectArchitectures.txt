@@ -1,2 +1,0 @@
-C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAM\WP8VBAM.csproj;arm
-C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAMComponent\WP8VBAMComponent.vcxproj;arm
