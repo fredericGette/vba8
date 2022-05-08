@@ -3585,7 +3585,7 @@ void CPULoop(int ticks)
 
             lcdTicks += 1008;
             DISPSTAT &= 0xFFFD;
-            if(VCOUNT == 160) {
+            if(VCOUNT == 160) { // Gameboy 160x144
               count++;
               systemFrame();
 

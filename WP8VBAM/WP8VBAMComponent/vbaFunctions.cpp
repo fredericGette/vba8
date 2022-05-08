@@ -30,6 +30,7 @@ void systemGbPrint(u8 *,int,int,int,int) { }
 void systemScreenCapture(int) { }
 // updates the joystick data
 bool systemReadJoypads() { return true; }
+// Retrieves the number of milliseconds that have elapsed since the system was started.
 u32 systemGetClock() { return (u32) GetTickCount64(); }
 void systemMessage(int, const char *, ...) { }
 void systemSetTitle(const char *) { }
@@ -42,7 +43,13 @@ void systemSoundReset() { }
 void systemScreenMessage(const char *) { }
 
 bool systemCanChangeSoundQuality() { return false; }
-void systemShowSpeed(int){ }
+// speed = percent of 60 frames by second
+// called every 60 frames
+void systemShowSpeed(int speed) { 
+	char test[100];
+	_snprintf(test, sizeof(test), "speed: %d%%\n", speed);
+	OutputDebugStringA(test);
+}
 void system10Frames(int){ }
 void systemFrame(){ }
 void systemGbBorderOn(){ }
@@ -447,47 +454,50 @@ u32 systemReadJoypad(int gamepad)
 	else if (motionInput & 8)
 		GetMotionMapping(settings->MotionDown, &left, &right, &up, &down, &a, &b, &l, &r);
 
-	Wiimote::Controller *WiiController = Wiimote::Controller::GetInstance();
-	DWORD wiimoteState = WiiController->getState();
-	if (wiimoteState & Wiimote::BUTTON_LEFT)
+	if (EmulatorSettings::Current->UseMogaController)
 	{
-		left = true;
-	}
-	if (wiimoteState & Wiimote::BUTTON_RIGHT)
-	{
-		right = true;
-	}
-	if (wiimoteState & Wiimote::BUTTON_UP)
-	{
-		up = true;
-	}
-	if (wiimoteState & Wiimote::BUTTON_DOWN)
-	{
-		down = true;
-	}
-	if (wiimoteState & Wiimote::BUTTON_ONE)
-	{
-		a = true;
-	}
-	if (wiimoteState & Wiimote::BUTTON_TWO)
-	{
-		b = true;
-	}
-	if (wiimoteState & Wiimote::BUTTON_A)
-	{
-		r = true;
-	}
-	if (wiimoteState & Wiimote::BUTTON_B)
-	{
-		l = true;
-	}
-	if (wiimoteState & Wiimote::BUTTON_HOME)
-	{
-		start = true;
-	}
-	if (wiimoteState & Wiimote::BUTTON_MINUS)
-	{
-		select = true;
+		Wiimote::Controller *WiiController = Wiimote::Controller::GetInstance();
+		DWORD wiimoteState = WiiController->getState();
+		if (wiimoteState & Wiimote::BUTTON_LEFT)
+		{
+			left = true;
+		}
+		if (wiimoteState & Wiimote::BUTTON_RIGHT)
+		{
+			right = true;
+		}
+		if (wiimoteState & Wiimote::BUTTON_UP)
+		{
+			up = true;
+		}
+		if (wiimoteState & Wiimote::BUTTON_DOWN)
+		{
+			down = true;
+		}
+		if (wiimoteState & Wiimote::BUTTON_ONE)
+		{
+			a = true;
+		}
+		if (wiimoteState & Wiimote::BUTTON_TWO)
+		{
+			b = true;
+		}
+		if (wiimoteState & Wiimote::BUTTON_A)
+		{
+			r = true;
+		}
+		if (wiimoteState & Wiimote::BUTTON_B)
+		{
+			l = true;
+		}
+		if (wiimoteState & Wiimote::BUTTON_HOME)
+		{
+			start = true;
+		}
+		if (wiimoteState & Wiimote::BUTTON_MINUS)
+		{
+			select = true;
+		}
 	}
 
 	//FG Moga

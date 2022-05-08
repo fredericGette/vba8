@@ -4388,6 +4388,7 @@ int gbGetNextEvent (int _clockTicks)
 
 void gbDrawLine()
 {
+	// WindowsPhone=32
   switch(systemColorDepth) {
     case 16:
     {

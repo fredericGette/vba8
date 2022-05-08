@@ -240,8 +240,11 @@ namespace PhoneDirect3DXamlAppComponent
 		m_renderer->SetVirtualController(this->vController);
 		m_renderer->UpdateForWindowSizeChange(WindowBounds.Width, WindowBounds.Height);
 		
-		Wiimote::Controller *WiiController = Wiimote::Controller::GetInstance();
-		WiiController->start();
+		if (EmulatorSettings::Current->UseMogaController)
+		{
+			Wiimote::Controller *WiiController = Wiimote::Controller::GetInstance();
+			WiiController->start();
+		}
 
 		//FG moga controler
 		//if (EmulatorSettings::Current->UseMogaController)

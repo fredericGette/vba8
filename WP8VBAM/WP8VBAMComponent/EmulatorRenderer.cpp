@@ -192,11 +192,6 @@ void EmulatorRenderer::ChangeOrientation(int orientation)
 
 void EmulatorRenderer::Update(float timeTotal, float timeDelta)
 {
-	//FG
-	//char test[100];
-	//_snprintf(test, sizeof(test), "FPS: %f\n", 1.0f/timeDelta);
-	//OutputDebugStringA(test);
-
 	if(!emulator->IsPaused())
 	{
 		this->elapsedTime += timeDelta;
@@ -510,7 +505,8 @@ void EmulatorRenderer::Render()
 	//using namespace Moga::Windows::Phone;
 	//Moga::Windows::Phone::ControllerManager^ ctrl = Direct3DBackground::getController();
 	//if (!(EmulatorSettings::Current->UseMogaController && ctrl != nullptr && ctrl->GetState(Moga::Windows::Phone::ControllerState::Connection) == ControllerResult::Connected))
-	//{
+	if (!EmulatorSettings::Current->UseMogaController)
+	{
 		this->controller->GetARectangle(&aRectangle);
 		this->controller->GetBRectangle(&bRectangle);
 		this->controller->GetCrossRectangle(&crossRectangle);
@@ -522,7 +518,7 @@ void EmulatorRenderer::Render()
 		this->controller->GetStickCenterRectangle(&centerRect);
 
 		DrawController();
-	//}
+	}
 	this->dxSpriteBatch->End();
 
 	frames++;

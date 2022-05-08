@@ -902,42 +902,43 @@ namespace PhoneDirect3DXamlAppInterop
             }
         }
 
-        async void btnSignin_SessionChanged(object sender, Microsoft.Live.Controls.LiveConnectSessionChangedEventArgs e)
-        {
-            try
-            {
-                if (e.Status == LiveConnectSessionStatus.Connected)
-                {
-                    App.session = e.Session;
-                    //this.statusLabel.Text = AppResources.StatusSignedIn;
-                    this.gotoImportButton.IsEnabled = true;
-                    this.gotoBackupButton.IsEnabled = true;
+        //FG
+        //async void btnSignin_SessionChanged(object sender, Microsoft.Live.Controls.LiveConnectSessionChangedEventArgs e)
+        //{
+        //    try
+        //    {
+        //        if (e.Status == LiveConnectSessionStatus.Connected)
+        //        {
+        //            App.session = e.Session;
+        //            //this.statusLabel.Text = AppResources.StatusSignedIn;
+        //            this.gotoImportButton.IsEnabled = true;
+        //            this.gotoBackupButton.IsEnabled = true;
 
-                    LiveConnectClient client = new LiveConnectClient(App.session);
-                    if (App.metroSettings.AutoBackup && (App.exportFolderID == null || App.exportFolderID == ""))
-                        App.exportFolderID = await ExportSelectionPage.CreateExportFolder(client); //get ID of upload folder
+        //            LiveConnectClient client = new LiveConnectClient(App.session);
+        //            if (App.metroSettings.AutoBackup && (App.exportFolderID == null || App.exportFolderID == ""))
+        //                App.exportFolderID = await ExportSelectionPage.CreateExportFolder(client); //get ID of upload folder
 
-                    //this.gotoRestoreButton.IsEnabled = true;
-                }
-                else
-                {
-                    this.gotoImportButton.IsEnabled = false;
-                    this.gotoBackupButton.IsEnabled = false;
-                    //this.gotoRestoreButton.IsEnabled = false;
-                    //this.statusLabel.Text = AppResources.StatusNotSignedIn;
-                    App.session = null;
+        //            //this.gotoRestoreButton.IsEnabled = true;
+        //        }
+        //        else
+        //        {
+        //            this.gotoImportButton.IsEnabled = false;
+        //            this.gotoBackupButton.IsEnabled = false;
+        //            //this.gotoRestoreButton.IsEnabled = false;
+        //            //this.statusLabel.Text = AppResources.StatusNotSignedIn;
+        //            App.session = null;
 
-                    //if (e.Error != null)
-                    //{
-                    //    MessageBox.Show(String.Format(AppResources.SkyDriveError, e.Error.Message), AppResources.ErrorCaption, MessageBoxButton.OK);
-                    //    //statusLabel.Text = e.Error.ToString();
-                    //}
-                }
-            }
-            catch (Exception ex)
-            {
-            }
-        }
+        //            //if (e.Error != null)
+        //            //{
+        //            //    MessageBox.Show(String.Format(AppResources.SkyDriveError, e.Error.Message), AppResources.ErrorCaption, MessageBoxButton.OK);
+        //            //    //statusLabel.Text = e.Error.ToString();
+        //            //}
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //    }
+        //}
 
         private void gotoImportButton_Click_1(object sender, RoutedEventArgs e)
         {

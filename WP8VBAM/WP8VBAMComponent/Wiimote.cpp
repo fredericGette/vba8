@@ -57,7 +57,7 @@ namespace Wiimote
 
 				Wiimote::Controller *WiiController = Wiimote::Controller::GetInstance();
 				*(this->state) = (Buffer[1] << 8) + Buffer[2];
-				Debug("%04X ", *(this->state));
+				//Debug("%04X ", *(this->state));
 			}
 		});
 	}
