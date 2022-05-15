@@ -379,12 +379,12 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
       <CompileAsWinRT>true</CompileAsWinRT>
-      <AdditionalIncludeDirectories>C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAMComponent\VBAM\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAMComponent\DesktopHeader;C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAMComponent\VBAM\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <AdditionalDependencies>d3d11.lib;dxguid.lib;xaudio2.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;dxguid.lib;xaudio2.lib;Ws2_32.lib;C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAMComponent\Lib\HID.lib;C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAMComponent\Lib\RPCRT4.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
     </Link>
@@ -413,11 +413,12 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
       <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAMComponent\VBAM;C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAMComponent\DesktopHeader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <AdditionalDependencies>d3d11.lib;dxguid.lib;xaudio2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;dxguid.lib;xaudio2.lib;C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAMComponent\Lib\HID.lib;C:\Users\frede\Source\Repos\vba8\WP8VBAM\WP8VBAMComponent\Lib\RPCRT4.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
     </Link>

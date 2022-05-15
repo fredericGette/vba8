@@ -6,6 +6,7 @@
 #include "WP8VBAMComponent.h"
 #include <math.h>
 #include <stdio.h>
+#include <chrono>
 
 using namespace DirectX;
 using namespace Microsoft::WRL;
@@ -295,6 +296,8 @@ void EmulatorRenderer::Update(float timeTotal, float timeDelta)
 
 void EmulatorRenderer::Render()
 {
+
+
 	if(autosaving)
 	{
 		WaitForSingleObjectEx(this->waitEvent, INFINITE, false);
@@ -315,7 +318,6 @@ void EmulatorRenderer::Render()
 		bgcolor[2] = (float)this->settings->BgcolorB / 255;
 	}
 
-
 	m_d3dContext->ClearRenderTargetView(
 		m_renderTargetView.Get(),
 		bgcolor
@@ -335,6 +337,7 @@ void EmulatorRenderer::Render()
 			framesNotRendered = 0;
 
 			WaitForSingleObjectEx(swapEvent, INFINITE, false);
+
 			int backbuffer = this->frontbuffer;
 			this->frontbuffer = (this->frontbuffer + 1) % 2;
 			uint8 *buffer = (uint8 *) this->MapBuffer(backbuffer, &gbaPitch);
@@ -346,6 +349,7 @@ void EmulatorRenderer::Render()
 			this->m_d3dContext->Unmap(this->buffers[this->frontbuffer].Get(), 0);
 
 			SetEvent(updateEvent);
+
 		}else
 		{
 			framesNotRendered++;
@@ -539,6 +543,7 @@ void *EmulatorRenderer::MapBuffer(int index, size_t *rowPitch)
 
 void systemDrawScreen() 
 { 
+
 	LeaveCriticalSection(&pauseSync);
 
 	SetEvent(swapEvent);
@@ -546,4 +551,5 @@ void systemDrawScreen()
 	WaitForSingleObjectEx(updateEvent, INFINITE, false);
 
 	EnterCriticalSection(&pauseSync);
+
 }

@@ -14,6 +14,11 @@ using namespace Windows::Storage;
 
 extern CRITICAL_SECTION pauseSync;
 
+extern "C" {
+	WINBASEAPI DWORD WINAPI GetPriorityClass(HANDLE hProcess);
+	WINBASEAPI BOOL WINAPI SetPriorityClass(HANDLE hProcess, DWORD dwPriorityClass);
+}
+
 namespace Emulator
 {
 	struct ROMData

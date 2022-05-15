@@ -7,6 +7,8 @@
 #include <GBA.h>
 #include <Util.h>
 #include <SoundDriver.h>
+#include <chrono>
+#include <processthreadsapi.h>
 
 /* Link
 ---------------------*/
@@ -148,6 +150,22 @@ namespace Emulator
 			return;
 		}
 
+		if (!SetPriorityClass(GetCurrentProcess(), HIGH_PRIORITY_CLASS))
+		{
+			DWORD dwError = GetLastError();
+			char test0[100];
+			_snprintf(test0, sizeof(test0), "SetPriorityClass error %d\n", dwError);
+			OutputDebugStringA(test0);
+		}
+
+		if (!SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_IDLE))
+		{
+			DWORD dwError = GetLastError();
+			char test0[100];
+			_snprintf(test0, sizeof(test0), "SetThreadPriority error %d\n", dwError);
+			OutputDebugStringA(test0);
+		}
+
 		this->stopThread = false;
 		threadAction = ThreadPool::RunAsync(ref new WorkItemHandler([this](IAsyncAction ^action)
 		{
@@ -282,32 +300,52 @@ namespace Emulator
 	void EmulatorGame::UpdateAsync(void)
 	{
 		WaitForSingleObjectEx(this->updateEvent, INFINITE, false);
+
+
+		DWORD dwPriClass = GetPriorityClass(GetCurrentProcess());
+
+		//if (!SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_HIGHEST))
+		//{
+		//	DWORD dwError = GetLastError();
+		//	char test0[100];
+		//	_snprintf(test0, sizeof(test0), "SetThreadPriority error %d\n", dwError);
+		//	OutputDebugStringA(test0);
+		//}
+		DWORD dwThreadPri = GetThreadPriority(GetCurrentThread());
+
+		char test0[100];
+		_snprintf(test0, sizeof(test0), "Current priority class is 0x%x\nCurrent priority thread is 0x%x\n", dwPriClass, dwThreadPri);
+		OutputDebugStringA(test0);
+
+		//Sleep(1000);
+
+		// Start measuring time
+		clock_t start = clock();
+
+		int j = 0;
+		for (int i = 0; i < 1000000; i++)
+		{
+			j++;
+		}
+
+		// Stop measuring time and calculate the elapsed time
+		clock_t end = clock();
+		double elapsed = double(end - start) / CLOCKS_PER_SEC;
+
+		char test[100];
+		_snprintf(test, sizeof(test), "EmulatorGame::UpdateAsync %.1f MHz.\n", 1/elapsed);
+		OutputDebugStringA(test);
+
 		while(!stopThread)
 		{
-			//if(emulating)
-			//{
-
-				/*for (int i = 0; i < 2; i++)
-				{
-				emulator.emuMain(emulator.emuCount);
-				}*/
-				/*if(emulating)
-				{*/
 			emulator.emuMain(emulator.emuCount);
-				/*}else
-				{
-					WaitForSingleObjectEx(this->sleepEvent, 0, false);
-				}*/
-#ifndef NO_LINK
-			if (GetLinkMode() != LINK_DISCONNECTED)
-				CheckLinkConnection();
-#endif
+
+//FG
+//#ifndef NO_LINK
+//			if (GetLinkMode() != LINK_DISCONNECTED)
+//				CheckLinkConnection();
+//#endif
 			
-		/*	}*/
-			/*LeaveCriticalSection(&pauseSync);
-			EnterCriticalSection(&pauseSync);*/
-			/*SetEvent(this->swapEvent);
-			WaitForSingleObjectEx(this->updateEvent, INFINITE, false);*/
 		}
 
 		// Signal for terminated thread
