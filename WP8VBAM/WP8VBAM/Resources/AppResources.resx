@@ -748,7 +748,7 @@ You should have received a copy of the GNU General Public License along with thi
     <value>Importing '{0}'</value>
   </data>
   <data name="UseMogaControllerText" xml:space="preserve">
-    <value>Use Moga controller</value>
+    <value>Use Wiimote controller</value>
   </data>
   <data name="PurchaseText" xml:space="preserve">
     <value>purchase</value>
@@ -1059,7 +1059,7 @@ Device ID: {0}</value>
     <value>Loading production list. Please wait...</value>
   </data>
   <data name="MogaGDR3Note" xml:space="preserve">
-    <value>Note: MOGA controller may require GDR3.</value>
+    <value>Note: Wiimote controller requires Windows Phone 8.1 GDR2.</value>
   </data>
   <data name="ProductNotAvailableText" xml:space="preserve">
     <value>Product is not available at the moment.</value>
@@ -1092,7 +1092,7 @@ Device ID: {0}</value>
     <value>Tap here to download Snes8x</value>
   </data>
   <data name="TapMogaInstructionText" xml:space="preserve">
-    <value>Tap here for MOGA controller instruction</value>
+    <value>Tap here for Wiimote controller instruction</value>
   </data>
   <data name="TapStartServerIPText" xml:space="preserve">
     <value>Tap Start server to get the server IP address.</value>
